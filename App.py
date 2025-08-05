@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 import plotly.express as px
 import pandas as pd
-
+import os
 # Title and Divider
 st.set_page_config(page_title="Salary Estimation App", layout='wide')
 
@@ -39,9 +39,9 @@ with col3:
 X = [years_at_company, satisfaction_level, average_monthly_hours]
 
 # Load model and scaler
-scaler = joblib.load("scaler.pkl")
-model = joblib.load("model.pkl")
-
+base_path = os.path.dirname(__file__)  # Gets current script directory
+scaler = joblib.load(os.path.join(base_path, "scaler.pkl"))
+model = joblib.load(os.path.join(base_path, "model.pkl"))
 # Predict button
 predict_button = st.button("Predict Salary")
 
