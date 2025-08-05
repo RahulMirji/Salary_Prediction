@@ -1,3 +1,7 @@
+**Live Demo**:
+https://salaryprediction-kopehwrsigj87bq9tqv6xh.streamlit.app/
+
+
 **1. Salary Prediction App (Python 3.9.11)**
 A simple ML-powered web app that predicts your salary based on:
 
