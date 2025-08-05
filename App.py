@@ -17,7 +17,7 @@ st.markdown("""
 col1, col2, col3 = st.columns([1, 2, 1])
 
 with col2:
-    st.image(r"D:/Placement Training/Salary.jpg", caption="Let's predict", use_container_width=True)
+    st.image(r"https://tse2.mm.bing.net/th/id/OIP.tTeaImkFfg4t2ia1yvbFwgHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", caption="Let's predict", use_container_width=True)
 
 
 # Divider
