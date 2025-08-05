@@ -39,8 +39,8 @@ with col3:
 X = [years_at_company, satisfaction_level, average_monthly_hours]
 
 # Load model and scaler
-scaler = joblib.load(r"D:\Placement Training\scaler.pkl")
-model = joblib.load(r"D:\Placement Training\model.pkl")
+scaler = joblib.load("scaler.pkl")
+model = joblib.load("model.pkl")
 
 # Predict button
 predict_button = st.button("Predict Salary")
