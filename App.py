@@ -17,7 +17,7 @@ st.markdown("""
 col1, col2, col3 = st.columns([1, 2, 1])
 
 with col2:
-    st.image("D:/Placement Training/Salary.jpg", caption="Let's predict", use_container_width=True)
+    st.image(r"D:/Placement Training/Salary.jpg", caption="Let's predict", use_container_width=True)
 
 
 # Divider
@@ -39,8 +39,8 @@ with col3:
 X = [years_at_company, satisfaction_level, average_monthly_hours]
 
 # Load model and scaler
-scaler = joblib.load("D:\Placement Training\scaler.pkl")
-model = joblib.load("D:\Placement Training\model.pkl")
+scaler = joblib.load(r"D:\Placement Training\scaler.pkl")
+model = joblib.load(r"D:\Placement Training\model.pkl")
 
 # Predict button
 predict_button = st.button("Predict Salary")
